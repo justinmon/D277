@@ -174,6 +174,16 @@ main {
   padding-bottom: 4rem;
 }
 
+.references-section {
+  width: auto;
+  padding: 2.5rem;
+}
+
+.references-section > ol {
+  color: black;
+  line-height: 2.5rem;
+}
+
 .quick-facts-aside {
   text-align: center;
   display: flex;
@@ -296,4 +306,59 @@ footer {
   gap: 2rem;
   list-style: none;
   font-size: 1.1rem;
+}
+
+/* contact page */
+
+.contact-main-page {
+  display: block;
+}
+
+#contact-title {
+  float: left;
+  width: 35%;
+  text-align: center;
+  padding: 0;
+}
+
+.contact-form {
+  float: right;
+  width: 55%;
+  height: 70rem;
+  position: relative;
+}
+
+.contact-form > form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  color: black;
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+input {
+  margin-bottom: 4rem;
+  width: 25rem;
+  height: 2.5rem;
+}
+
+textarea {
+  height: 22rem;
+  width: 25rem;
+  resize: none;
+  margin-bottom: 2rem;
+}
+
+.submit-button,
+.clear-button {
+  width: 12rem;
+  height: 3rem;
 }

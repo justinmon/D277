@@ -6,6 +6,7 @@
     <title>D277</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
   </head>
   <body>
     <!-- navigation -->
@@ -20,7 +21,74 @@
       </ul>
     </nav>
 
-    <main></main>
+    <main class="contact-main-page">
+      <aside id="contact-title" class="city-title-section">
+        <h1>Contact</h1>
+      </aside>
+      <section class="contact-form">
+        <form id="form" accept="example.html" method="get">
+          <label for="firstname">First name: </label>
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            placeholder=" Jane"
+            required
+          />
+          <br />
+          <label for="lastname">Last name: </label>
+          <input
+            type="text"
+            id="lastname"
+            name="lastname"
+            placeholder=" Doe"
+            required
+          />
+          <br />
+          <label for="email">Email: </label>
+          <input
+            type="email"
+            id="email1"
+            name="email"
+            placeholder=" jane@email.com"
+            required
+          />
+          <br />
+          <label for="password">Confirm Email: </label>
+          <input
+            type="email"
+            id="email2"
+            name="email"
+            placeholder=" jane@email.com"
+            required
+          />
+          <p id="message"></p>
+          <br />
+          <label for="message">Message: </label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder=" I have a question about..."
+          ></textarea>
+          <!-- <input
+            type="text"
+            name="message"
+            placeholder="I have a question about..."
+            required
+          /> -->
+          <br />
+          <button
+            class="submit-button"
+            type="submit"
+            onclick="checkEmail()"
+            value="Submit"
+          >
+            Submit
+          </button>
+          <button class="clear-button" type="reset" value="Clear">Clear</button>
+        </form>
+      </section>
+    </main>
 
     <!-- footer -->
     <footer>
