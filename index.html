@@ -22,10 +22,8 @@
     <!-- main section -->
     <main>
       <section class="home-welcome-section">
-        <div>
-          <h1 class="welcome-heading">Welcome to Iowa!</h1>
-        </div>
-        <div class="main-section-container">
+        <h1 class="welcome-heading">Welcome to Iowa!</h1>
+        <div class="home-section-container">
           <p>
             Also known as the hawkeye state, and home to the fields of
             opportunities. Here in Iowa you’ll not only find a rich history, but
@@ -33,21 +31,24 @@
             or our beautiful rural countryside. Iowa offers a perfect blend of
             culture, stability, nature, and community.
           </p>
-          <img
-            class="welcome-sign"
-            src="IMG/800px-Iowa_welcome_sign_2008.jpg"
-            alt="Welcome to Iowa road sign"
-          />
+          <div class="home-img-container">
+            <img
+              class="welcome-sign"
+              src="IMG/800px-Iowa_welcome_sign_2008.jpg"
+              alt="Welcome to Iowa road sign"
+            />
+            <span><a href="references.html">(5)</a></span>
+          </div>
         </div>
-        <div class="google-earth-link">
-          <p>
+        <div id="google-earth-link">
+          <h3>
             Explore Us On
             <a
               target="_blank"
               href="https://earth.google.com/web/@41.93834045,-93.38952791,-70.0649013a,929992.92828766d,35y,0h,0t,0r/data=ChAaDgoIL20vMDNzMHcYAiABOgMKATA"
               >Google Earth</a
             >
-          </p>
+          </h3>
         </div>
       </section>
       <aside class="quick-facts-aside">
@@ -55,7 +56,7 @@
         <div class="aside-container">
           <ul>
             <li>
-              Iowa was apart of the Louisana Purchase from France in 1803.
+              Iowa was apart of the Louisiana Purchase from France in 1803.
             </li>
             <li>
               Statehood was established in 1846, amid tensions in the pre-civil
@@ -69,14 +70,21 @@
               The state flag was inspired by the France flag as seen in the
               images below.
             </li>
+            <span id="quick-facts-reference">(Salisbury & Honey, 2024)</span>
           </ul>
           <div class="img-container">
             <img src="IMG/flag-iowa.webp" alt="Iowa state flag" />
+            <span
+              ><a class="img-reference" href="references.html">(11)</a></span
+            >
             <img src="IMG/Flag-France.webp" alt="France national flag" />
+            <span
+              ><a class="img-reference" href="references.html">(12)</a></span
+            >
           </div>
         </div>
       </aside>
-      <section class="main-table-section">
+      <section class="home-table-section">
         <h2>How Iowa Compares to the U.S.</h2>
         <table>
           <tr>
@@ -110,7 +118,9 @@
             <td>38.5 <span>(2022)</span></td>
           </tr>
         </table>
-        <span>(QuickFacts: Iowa; United States, 2023)</span>
+        <span id="table-reference"
+          >(QuickFacts: Iowa; United States, 2023)</span
+        >
       </section>
     </main>
 
@@ -118,9 +128,9 @@
     <footer>
       <nav class="secondary-nav">
         <ul class="secondary-nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#references">References</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="references.html">References</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </footer>

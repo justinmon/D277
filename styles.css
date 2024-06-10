@@ -15,8 +15,26 @@ main {
   background-image: linear-gradient(#0a1f62, #ffffff, #d80025);
 }
 
+section,
+aside {
+  /* height: 45rem; */
+  width: 70rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 span {
   display: block;
+  font-size: 0.8rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+p > a {
   font-size: 0.8rem;
   font-weight: 300;
   font-style: italic;
@@ -32,14 +50,17 @@ a {
   color: white;
 }
 
+h3 {
+  color: black;
+}
+
 a:hover {
   color: #ffcd00;
   text-decoration: underline;
-  text-underline-offset: 1rem;
+  text-underline-offset: 0.4rem;
   text-decoration-color: white;
 }
 
-/* home page */
 /* navigation bar */
 
 .primary-nav {
@@ -72,20 +93,15 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 6rem;
+  padding: 5rem;
   gap: 3rem;
 }
 
-section,
-aside {
-  height: 45rem;
-  width: 70rem;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+.city-title-section {
+  width: auto;
+  padding: 1rem 3rem;
+  font-size: 6rem;
+  font-weight: 800;
 }
 
 .home-welcome-section {
@@ -96,24 +112,66 @@ aside {
   gap: 3rem;
 }
 
-.welcome-heading {
-  font-size: 3rem;
-  font-weight: bold;
+.city-welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
 }
 
-.main-section-container {
+.main-container {
   display: flex;
-  padding: 2rem;
-  gap: 1.5rem;
+  flex-direction: column;
+  align-items: center;
   font-size: 1.5rem;
 }
 
-.welcome-sign {
-  width: 35%;
+.main-container > p {
+  width: 65%;
+  padding-bottom: 2rem;
 }
 
-.google-earth-link {
-  font-size: 2rem;
+.main-container > img {
+  width: 75%;
+  padding-bottom: 1rem;
+}
+
+.main-container > span {
+  padding-bottom: 2.5rem;
+}
+
+.welcome-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.home-section-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  gap: 4rem;
+}
+
+.home-section-container > p {
+  width: 55%;
+  padding-left: 6rem;
+}
+
+.home-img-container {
+  width: 45%;
+  padding-right: 6rem;
+  text-align: center;
+}
+
+/* ID selector */
+#google-earth-link {
+  font-size: 2.2rem;
+  padding-bottom: 4rem;
 }
 
 .quick-facts-aside {
@@ -146,21 +204,38 @@ aside {
 .img-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 2rem;
+}
+
+.img-reference {
+  color: black;
 }
 
 .img-container > img {
   width: 60%;
 }
 
+#quick-facts-reference {
+  padding-top: 1rem;
+  padding-bottom: 3.5rem;
+}
+
 /* home page table section */
 
-.main-table-section > h2 {
+.home-table-section > h2 {
   font-size: 2.5rem;
   font-weight: 800;
   text-align: center;
   padding-top: 2rem;
+}
+
+.city-table-section > h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 2rem;
+  color: black;
 }
 
 table,
@@ -171,7 +246,7 @@ td {
   outline: 1px solid black;
 }
 
-.main-table-section > table {
+table {
   margin-left: auto;
   margin-right: auto;
   margin-top: 3rem;
@@ -199,9 +274,10 @@ td {
   padding-left: 1rem;
 }
 
-.main-table-section > span {
+#table-reference {
   text-align: center;
   padding-top: 0.8rem;
+  padding-bottom: 1rem;
 }
 
 /* footer */
