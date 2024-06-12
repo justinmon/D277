@@ -16,8 +16,10 @@ main {
 }
 
 section,
-aside {
-  /* height: 45rem; */
+aside,
+.city-title-section,
+.references-header,
+.contact-header {
   width: 70rem;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
@@ -54,6 +56,7 @@ h3 {
   color: black;
 }
 
+/* hover effect for navigation buttons */
 a:hover {
   color: #ffcd00;
   text-decoration: underline;
@@ -83,9 +86,25 @@ a:hover {
   font-size: 1.6rem;
 }
 
-/* hover effect for navigation buttons */
+/* footer */
 
-/* body */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  background-color: black;
+}
+
+.secondary-nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.1rem;
+}
+
+/* main */
 
 main {
   flex-grow: 1;
@@ -97,7 +116,9 @@ main {
   gap: 3rem;
 }
 
-.city-title-section {
+.city-title-section,
+.references-header,
+.contact-header {
   width: auto;
   padding: 1rem 3rem;
   font-size: 6rem;
@@ -231,7 +252,14 @@ main {
   padding-bottom: 3.5rem;
 }
 
-/* home page table section */
+.state-motto-aside {
+  font-style: italic;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 30rem;
+}
+
+/* table section */
 
 .home-table-section > h2 {
   font-size: 2.5rem;
@@ -290,24 +318,6 @@ td {
   padding-bottom: 1rem;
 }
 
-/* footer */
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 4rem;
-  background-color: black;
-}
-
-.secondary-nav-links {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-  font-size: 1.1rem;
-}
-
 /* contact page */
 
 .contact-main-page {
@@ -361,4 +371,10 @@ textarea {
 .clear-button {
   width: 12rem;
   height: 3rem;
+}
+
+#contact-motto {
+  position: absolute;
+  bottom: -191px;
+  width: 35rem;
 }
